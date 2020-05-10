@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>Facebook login</title>
+        <link rel="stylesheet" href="login.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    </head>
+    <body>
+        <div class="header">
+            <div class="first-box">
+                <img class="fb-logo" src="fb.jpg" alt:fbimg >
+                <div class="login-box">
+                    <form>
+                        <input class="login-input" id="username">
+                        <input class="login-input"  id="password">
+                        <input type="sub" value="Log In" id="loginbutton">
+                    </form>
+                </div>
+                <script>
+                    
+                        $(".login-input").val("mummy-box");
+                        $("#loginbutton").click(function(){
+                            var username=$("#username").val(); //username(in bracket) is id
+                            var password=$("#password").val();
+                            alert("User: "+password+"\nPassword: "+username);
+                        });
+                </script>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="create-box">
+                <h1>Create a new account</h1>
+                <p>It's free and always will be.</p>
+                <form>
+                 <input class="name-input" type="text" value="First name">
+                 <input class="name-input" type="text" value="Surname">
+                 
+                 <input class="mobile-input" type="tel" value="Mobile Number">
+        
+                 <input class="pass-input" type="password" value="New Password">
+                 <p>Birthday</p>
+                 <input class="dob-input" type="date">
+                 <input name="gender-input" type="radio" value="Male" checked>Male
+                 <input name="gender-input" type="radio" value="Female"> Female<br></br>
+                 <input type="submit" value="Create Account" style="color:white;background-color:green" >
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
